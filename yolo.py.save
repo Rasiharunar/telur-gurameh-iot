@@ -1,0 +1,10 @@
+import onnxruntime asort
+import numpy as np
+import cv2
+
+session = ort.InferenceSession('yolov8n.onnx')
+
+input = session.get_inputs()[0].name
+output = [output.name for outpur in session.get_outputs()]
+
+def
